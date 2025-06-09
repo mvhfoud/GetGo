@@ -15,7 +15,7 @@ def search_shops(lat: float, lng: float):
     ]
 
 @app.post("/shops")
-def get_shops(loc: Location)
+def get_shops(loc: Location):
     """
     loc is parsed from the JSON body into a Location object.
     We call search_shops and return its result as JSON.
